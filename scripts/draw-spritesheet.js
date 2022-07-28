@@ -1,5 +1,6 @@
 import fs from 'fs-extra'
 import NodeCanvas from 'canvas'
+import sharp from 'sharp'
 const { createCanvas, loadImage } = NodeCanvas
 
 
@@ -15,10 +16,11 @@ function draw(){
       let img = await loadImage(p)
       ctx.drawImage(img,x,y,w,h)
     })).then(() => {
-      fs.writeFileSync(`./trimmed/${type}-spritesheet.png`, canvas.toBuffer('image/png'))
+      sharp(canvas.toBuffer('image/png'))
+        .withMetadata({ icc: 'p3'})
+        .toFile(`./trimmed/${type}-spritesheet.png`)
     })
   })
 
 }
-
 draw()

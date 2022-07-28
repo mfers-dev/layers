@@ -28,8 +28,23 @@ async function trimLayers(type){
   await Promise.all(promises)
 
   const {w, h, fill} = potpack(boxes);
-  console.log({type})
   fs.writeFileSync(`./trimmed/${type}.json`,JSON.stringify({boxes,w,h,fill}))
+  fs.writeFileSync(`./trimmed/${type}-traits.json`,JSON.stringify(clean_up_boxes_json(boxes,type),null,2))
+}
+
+function clean_up_boxes_json(boxes,type){
+  let traits = {}
+  boxes.forEach(({ p, og_x, og_y, x, y, w, h }) => {
+    p = p.replace(`./trimmed/${type}/`,'').replace('.png','')
+    let [category, variant] = p.split('/')
+    category = category.replace('_',':')
+    variant = variant.replace('--','/')
+    if(!traits[category]){
+      traits[category] = {}
+    }
+    traits[category][variant] = {og_x,og_y,x,y,w,h}
+  })
+  return traits
 }
 
 
@@ -160,10 +175,8 @@ async function getTrimmedInfo(src,p,boxes){
     p,
   })
 
-  return await sharp(src, {
-    limitInputPixels: 500000000,
-    failOnError: false,
-  })
+  return await sharp(src, { })
+    .pipelineColourspace('rgb16')
     .extract({
       left: info.trimOffsetLeft * -1,
       top: info.trimOffsetTop * -1,
