@@ -4,3 +4,5 @@ node_modules
 *.lock
 *.log
 .env
+svg-layers
+scripts/vectorize.js

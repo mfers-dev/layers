@@ -1,6 +1,6 @@
 {
   "background": {
-    "graveyard": {
+    "space": {
       "og_x": 0,
       "og_y": 0,
       "x": 0,
@@ -8,7 +8,7 @@
       "w": 1000,
       "h": 1000
     },
-    "space": {
+    "graveyard": {
       "og_x": 0,
       "og_y": 0,
       "x": 1000,
@@ -136,7 +136,7 @@
       "w": 604,
       "h": 492
     },
-    "messy red": {
+    "messy purple": {
       "og_x": 148,
       "og_y": 188,
       "x": 1222,
@@ -144,7 +144,7 @@
       "w": 604,
       "h": 492
     },
-    "messy purple": {
+    "messy red": {
       "og_x": 148,
       "og_y": 188,
       "x": 1826,
@@ -160,7 +160,7 @@
       "w": 604,
       "h": 492
     },
-    "mohawk black": {
+    "mohawk green": {
       "og_x": 133,
       "og_y": 177,
       "x": 3034,
@@ -168,7 +168,7 @@
       "w": 605,
       "h": 477
     },
-    "mohawk blue": {
+    "mohawk purple": {
       "og_x": 133,
       "og_y": 177,
       "x": 3639,
@@ -176,7 +176,7 @@
       "w": 605,
       "h": 477
     },
-    "mohawk green": {
+    "mohawk black": {
       "og_x": 133,
       "og_y": 177,
       "x": 0,
@@ -184,7 +184,7 @@
       "w": 605,
       "h": 477
     },
-    "mohawk purple": {
+    "mohawk red": {
       "og_x": 133,
       "og_y": 177,
       "x": 605,
@@ -200,7 +200,7 @@
       "w": 605,
       "h": 477
     },
-    "mohawk red": {
+    "mohawk blue": {
       "og_x": 133,
       "og_y": 177,
       "x": 1815,
@@ -218,7 +218,7 @@
     }
   },
   "hat under headphones": {
-    "knit atlanta": {
+    "knit baltimore": {
       "og_x": 155,
       "og_y": 200,
       "x": 3025,
@@ -226,7 +226,7 @@
       "w": 620,
       "h": 452
     },
-    "knit baltimore": {
+    "knit atlanta": {
       "og_x": 155,
       "og_y": 200,
       "x": 3645,
@@ -242,7 +242,7 @@
       "w": 620,
       "h": 452
     },
-    "knit cleveland": {
+    "knit kc": {
       "og_x": 155,
       "og_y": 200,
       "x": 620,
@@ -250,7 +250,7 @@
       "w": 620,
       "h": 452
     },
-    "knit chicago": {
+    "knit dallas": {
       "og_x": 155,
       "og_y": 200,
       "x": 1240,
@@ -258,7 +258,7 @@
       "w": 620,
       "h": 452
     },
-    "knit kc": {
+    "knit cleveland": {
       "og_x": 155,
       "og_y": 200,
       "x": 1860,
@@ -266,7 +266,7 @@
       "w": 620,
       "h": 452
     },
-    "knit dallas": {
+    "knit chicago": {
       "og_x": 155,
       "og_y": 200,
       "x": 2480,
@@ -290,7 +290,7 @@
       "w": 620,
       "h": 452
     },
-    "knit new york": {
+    "knit pittsburgh": {
       "og_x": 155,
       "og_y": 200,
       "x": 0,
@@ -298,7 +298,7 @@
       "w": 620,
       "h": 452
     },
-    "knit san fran": {
+    "knit new york": {
       "og_x": 155,
       "og_y": 200,
       "x": 620,
@@ -306,7 +306,7 @@
       "w": 620,
       "h": 452
     },
-    "knit pittsburgh": {
+    "knit san fran": {
       "og_x": 155,
       "og_y": 200,
       "x": 1240,
@@ -378,7 +378,7 @@
       "w": 576,
       "h": 254
     },
-    "headband blue/red": {
+    "headband green/white": {
       "og_x": 159,
       "og_y": 288,
       "x": 2684,
@@ -394,7 +394,7 @@
       "w": 576,
       "h": 254
     },
-    "headband pink/white": {
+    "headband blue/red": {
       "og_x": 159,
       "og_y": 288,
       "x": 3836,
@@ -402,7 +402,7 @@
       "w": 576,
       "h": 254
     },
-    "headband green/white": {
+    "headband pink/white": {
       "og_x": 159,
       "og_y": 288,
       "x": 0,
@@ -420,36 +420,36 @@
       "w": 246,
       "h": 406
     },
-    "blue headphones": {
+    "gold headphones": {
       "og_x": 268,
       "og_y": 224,
       "x": 932,
       "y": 3603,
+      "w": 241,
+      "h": 400
+    },
+    "blue headphones": {
+      "og_x": 268,
+      "og_y": 224,
+      "x": 1173,
+      "y": 3603,
       "w": 240,
-      "h": 400
-    },
-    "gold headphones": {
-      "og_x": 268,
-      "og_y": 224,
-      "x": 1172,
-      "y": 3603,
-      "w": 241,
-      "h": 400
-    },
-    "pink headphones": {
-      "og_x": 268,
-      "og_y": 224,
-      "x": 1413,
-      "y": 3603,
-      "w": 241,
       "h": 400
     },
     "green headphones": {
       "og_x": 268,
       "og_y": 224,
-      "x": 1654,
+      "x": 1413,
       "y": 3603,
       "w": 242,
+      "h": 400
+    },
+    "red headphones": {
+      "og_x": 268,
+      "og_y": 224,
+      "x": 1655,
+      "y": 3603,
+      "w": 241,
       "h": 400
     },
     "lined headphones": {
@@ -460,7 +460,7 @@
       "w": 244,
       "h": 400
     },
-    "red headphones": {
+    "pink headphones": {
       "og_x": 268,
       "og_y": 224,
       "x": 2140,
@@ -540,7 +540,7 @@
     }
   },
   "shirt": {
-    "collared shirt green": {
+    "collared shirt blue": {
       "og_x": 429,
       "og_y": 759,
       "x": 576,
@@ -548,7 +548,7 @@
       "w": 446,
       "h": 241
     },
-    "collared shirt blue": {
+    "collared shirt green": {
       "og_x": 429,
       "og_y": 759,
       "x": 1022,
@@ -556,7 +556,7 @@
       "w": 446,
       "h": 241
     },
-    "collared shirt turquoise": {
+    "collared shirt pink": {
       "og_x": 429,
       "og_y": 759,
       "x": 1468,
@@ -564,7 +564,7 @@
       "w": 446,
       "h": 241
     },
-    "collared shirt pink": {
+    "collared shirt turquoise": {
       "og_x": 429,
       "og_y": 759,
       "x": 1914,
@@ -596,7 +596,7 @@
       "w": 434,
       "h": 241
     },
-    "hoodie down blue": {
+    "hoodie down gray": {
       "og_x": 430,
       "og_y": 765,
       "x": 3686,
@@ -604,7 +604,7 @@
       "w": 429,
       "h": 235
     },
-    "hoodie down gray": {
+    "hoodie down blue": {
       "og_x": 430,
       "og_y": 765,
       "x": 0,
@@ -612,7 +612,7 @@
       "w": 429,
       "h": 235
     },
-    "hoodie down green": {
+    "hoodie down red": {
       "og_x": 425,
       "og_y": 765,
       "x": 429,
@@ -620,7 +620,7 @@
       "w": 434,
       "h": 235
     },
-    "hoodie down red": {
+    "hoodie down green": {
       "og_x": 425,
       "og_y": 765,
       "x": 863,
@@ -646,7 +646,7 @@
       "w": 329,
       "h": 148
     },
-    "purple shades": {
+    "nerd glasses": {
       "og_x": 445,
       "og_y": 417,
       "x": 2055,
@@ -654,7 +654,7 @@
       "w": 312,
       "h": 137
     },
-    "nerd glasses": {
+    "purple shades": {
       "og_x": 445,
       "og_y": 417,
       "x": 2367,
@@ -712,7 +712,7 @@
     }
   },
   "4:20 watch": {
-    "oyster gold": {
+    "oyster silver": {
       "og_x": 810,
       "og_y": 734,
       "x": 3850,
@@ -720,7 +720,7 @@
       "w": 91,
       "h": 112
     },
-    "oyster silver": {
+    "oyster gold": {
       "og_x": 810,
       "og_y": 734,
       "x": 3941,
@@ -744,7 +744,7 @@
       "w": 91,
       "h": 112
     },
-    "sub blue": {
+    "sub black": {
       "og_x": 810,
       "og_y": 734,
       "x": 4214,
@@ -752,7 +752,7 @@
       "w": 91,
       "h": 112
     },
-    "sub black": {
+    "sub blue": {
       "og_x": 810,
       "og_y": 734,
       "x": 4305,
@@ -760,7 +760,7 @@
       "w": 91,
       "h": 112
     },
-    "sub lantern (green)": {
+    "sub red": {
       "og_x": 810,
       "og_y": 734,
       "x": 4396,
@@ -768,7 +768,7 @@
       "w": 91,
       "h": 112
     },
-    "sub rose": {
+    "sub turquoise": {
       "og_x": 810,
       "og_y": 734,
       "x": 4115,
@@ -776,7 +776,7 @@
       "w": 91,
       "h": 112
     },
-    "sub red": {
+    "sub lantern (green)": {
       "og_x": 810,
       "og_y": 734,
       "x": 4206,
@@ -784,7 +784,7 @@
       "w": 91,
       "h": 112
     },
-    "sub turquoise": {
+    "sub rose": {
       "og_x": 810,
       "og_y": 734,
       "x": 4297,

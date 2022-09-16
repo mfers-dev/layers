@@ -21,7 +21,9 @@ async function trimLayers(type){
       sharp(p)
         .toBuffer()
         .then(buffer => {
-          return getTrimmedInfo(buffer,output_p,boxes)
+          if(!p.includes('1--1')){
+            return getTrimmedInfo(buffer,output_p,boxes)
+          }
         })
     )
   })
@@ -43,6 +45,20 @@ function clean_up_boxes_json(boxes,type){
       traits[category] = {}
     }
     traits[category][variant] = {og_x,og_y,x,y,w,h}
+  })
+  let compressed_traits = {}
+  Object.keys(traits).forEach(category => {
+    let coor_map = {}
+    Object.keys(traits[category]).forEach(variant => {
+      let { og_x,og_y, x, y, w, h } = traits[category][variant]
+      let coor_key = [og_x,og_y,w,h].join(',')
+      if(coor_map[coor_key]){
+        coor_map[coor_key].push([variant,x,y].join(','))
+      } else {
+        coor_map[coor_key] = [[variant,x,y].join(',')]
+      }
+    })
+    compressed_traits[category] = coor_map
   })
   return traits
 }
